@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація</title>
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body class="bg-img">
+    <header>
+      <nav>
+        <div><h1>Реєстрація</h1></div>
+        <ul>
+          <li><a class="hpage" href="../index.html">Головна сторінка</a></li>
+          <li><a class="articles" href="articles.html">Статті</a></li>
+          <li><a class="catalog" href="catalog.html">Каталог</a></li>
+          <li><a class="contacts" href="contacts.html">Контакти</a></li>
+          <li><a class="gallery" href="gallery.html">Галерея</a></li>
+          <li><a class="page-nav" href="page-nav.html">Навігація</a></li>
+          <li><a class="registration" href="registration.html">Реєстрація</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container wrap">
+      <form action="https://tests.fomenko.top/echo/index.php" method="get">  
+        <fieldset>
+          <legend>#1 Базові поля вводу</legend>
+        <div class="form-group">
+          <label class="form-group-pib" for="name">Прізвище/Ім'я</label>
+          <input class="caplet" name="name" id="name" type="text" placeholder="name">
+        </div>
+        <div class="form-group">
+          <label for="email">Адреса електронної пошти</label>
+          <input name="email" id="email" type="email" placeholder="email">
+        </div>
+        <div class="form-group">
+          <label for="sex">Обрати стать</label>
+          <input name="sex" id="sex" type="text" placeholder="Cтать">
+        </div>
+        <div class="form-group">
+          <label for="password">Пароль</label>
+          <input name="password" id="password" type="password" placeholder="Password">   
+        </div>
+        <div class="form-group">
+          <label for="sait">Адреса сайту</label>
+          <input name="sait" id="sait" type="text" placeholder="https://mysite.name">    
+        </div>
+        <div class="form-group">
+          <label for="date">Дата народження</label>
+          <input name="date" id="date" type="date">
+        </div>
+        <div class="form-group">
+          <label for="file">Додати фотографію</label>
+          <input name="file" id="file" type="file">
+        </div>
+        </fieldset>
+        <fieldset> 
+          <legend>#2 Варіаційний вибір</legend>
+          
+          <div>Обрати кухню:</div>
+     
+        <div class="form-group-k">
+          <input id="ua" name="kua" type="checkbox" value="ua">
+          <label for="ua">Украинская</label>
+        </div>  
+        <div class="form-group-k">
+          <input id="it" name="kit" type="checkbox" value="it">
+          <label for="it">Итальянская</label>
+        </div>  
+        <div class="form-group-k">
+          <input id="gr" name="kit" type="checkbox" value="gr">
+          <label for="gr">Грузинская</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>#3 Випадаючий список</legend>
+        <div class="form-group">
+          <label for="list">Переважний рік вина</label>
+          <select id="list" name="list">
+            <option disabled selected value="">Оберіть рік</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+          </select>
+        </div>
+      </fieldset>
+      <fieldset>
+      <legend>#4 Багаторядкове поле</legend>
+      <div class="form-group">
+          <label for="txt">Про себе</label>
+          <textarea name="txt" id="txt" cols="50" rows="5" placeholder="Довільний"></textarea>
+        </div>
+        </fieldset>
+        <fieldset class="button">   
+          <legend>#4 Кнопки управління полем</legend>
+              <div class="form-group">
+                <button type="submit">Зареєструватися</button>
+              </div>
+              <div class="form-group">
+                <button type="reset">Очистити форму</button>
+              </div>
+          </fieldset>
+      </form>
+      </div>
+    </main>
+    <div>
+      <footer>&copy; Tyutyunik Liliya</footer>
+    </div>
+  </body>
+</html>

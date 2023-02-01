@@ -1,0 +1,274 @@
+html {
+}
+body {
+    display: grid;
+    margin: 0;
+    /* font-family: 'Roboto', sans-serif; */
+    padding-bottom: 100px;
+}
+    
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    overflow: hidden;
+}
+.bg-img {
+    font-weight: 500;
+    background-image: url(../img/mirror.jpg); 
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;     
+    background-attachment: fixed;   
+}
+.header {
+    padding-top: 40px; 
+}
+.navbar-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+    justify-content: space-evenly;
+    font-size: 28px;
+    
+}
+.navbar-link:hover {
+    background-color: rgb(12, 12, 12);
+    color: rgb(250, 247, 246);
+    transform: translateY(10px);
+}
+main {
+    padding: 70px;
+}
+.bgal-img {
+    background: url(../img/liberta1.jpeg); 
+    background-size: 20px;
+}
+a {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: black;
+    text-decoration: none;
+  
+}  
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: left;
+    color: black;
+    padding: 5px 150px;
+    margin: auto;
+}
+
+.artone {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    font-weight: 800;
+    color: rgb(34, 35, 35);
+    border-bottom: 1px solid #000000;
+}
+.art {
+    background-color: rgb(178 149 115);
+    padding: 15px;
+    
+}
+.wrap {
+    background: #ffffff9c;
+}
+
+.readmore {
+    text-decoration: underline;
+}
+.readmore:hover {
+    color:rgb(70, 68, 68);
+    text-decoration: none; 
+}
+.comments {
+    color: rgb(42, 41, 41);
+}
+.art1 {
+    text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.letter p::first-letter {
+    font-family: Arial;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: rgb(62, 60, 60);
+}
+.list {
+
+    list-style-image: url(../img/icons/icon.png) ;
+    font-size: 10px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(236, 228, 228);
+    opacity: 0.7;
+    height: 20vh;
+    padding: 5px;
+}
+.cat {
+    padding: 50px 20px;
+}
+.flowers {
+    list-style-image: url(../img/icons/flower1.png);
+    background-color: rgb(145, 139, 139);
+    font-size: 25px;
+    border-width: 1em;   
+}
+.toys {
+    list-style-image: url(../img/icons/child.png);
+    background-color: rgb(145, 139, 139);
+    font-size: 25px;
+    border-width: 1em;
+}
+.books {
+     list-style-image: url(../img/icons/book.png);
+     background-color: rgb(145, 139, 139);
+     font-size: 25px;
+     border-width: 1em;
+}
+li.new::after {
+    content: "new";
+  background: #d16e31;
+  color: aliceblue;
+  font-size: 60%;
+  padding: 5px;  
+  margin-left: 20px;
+}
+/* .bgallery-img {  */
+    background-color: hsl(273, 5%, 61%);
+    background-image: url(../img/liberta.jpeg);
+    background-size: 54%;    
+    background-repeat: repeat;
+    background-position: top right;
+    /* background-size: 300px; */
+
+.frame {
+    height: 500px;
+    width: 800px;
+    background: rgb(189, 193, 191);  
+    padding: 10px 10px;
+    border:3px solid rgb(102, 101, 101);
+    text-decoration: #050504;
+    color: rgb(62, 60, 60);
+}
+.frame:hover {    
+    border-color: transparent;
+    }
+
+    .gallery-item {
+        background: rgb(189, 193, 191);  
+        border:3px solid rgb(102, 101, 101);
+        text-decoration: #050504;
+        color: rgb(62, 60, 60);
+        text-align: center;
+        margin-bottom: 15px;
+        width: 500px;
+    }
+    .gallery-item:hover { 
+        border-color: transparent;
+    }
+.frame-center {
+    margin: 0 auto;
+    display: block;
+}
+.text-center {
+    text-align: center;
+}
+.navname {
+    display: flex;
+    gap: 20px;
+}
+legend {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-style: normal;
+}
+fieldset { 
+    max-width: 500px;  
+    max-height: 20%;
+    margin: 0 auto;
+    padding: 10px 10px;
+    background-color: rgb(239, 241, 243);
+}
+input {
+    width: 80%;
+    padding: 10px 30px;   
+  } 
+  textarea {
+    width: 90%;
+    padding: 10px 10px;
+    resize: vertical;  
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group-k {
+    margin: 20px 0 5px;
+
+}
+button:hover {
+    outline: 2px dotted #050504;
+}
+.button {
+    display: flex;
+    justify-content: space-evenly;
+}
+  input[type="file"] {
+    padding: 0;
+}
+  input[type="radio"],
+  input[type="checkbox"] {
+    width: auto;
+}
+  .caplet {
+    text-transform: capitalize;
+}
+
+.fs-28 {
+    font-size: 28px;
+}
+.socials {
+    display: flex;
+     justify-content: center;
+   gap: 20px;
+   font-weight: 300;
+   margin-bottom: 12px;
+}
+.social-link {
+    font-size: 1.0rem;
+}
+
+.footer {
+    /* position: absolute;
+    z-index: 10;
+    right: 0;
+    bottom: 0;
+    left: 0; */
+}
+.position-bottom  {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .footer__copyright {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+    height: 30px;  
+    text-align: center;
+  }
+    
+@media (max-width: 1340px) {
+
+}
