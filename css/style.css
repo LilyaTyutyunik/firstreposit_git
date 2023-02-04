@@ -1,18 +1,18 @@
-html {
-}
 body {
     display: grid;
     margin: 0;
-    /* font-family: 'Roboto', sans-serif; */
     padding-bottom: 100px;
-}
-    
+}   
 .container {
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
     padding: 10px 20px;
     overflow: hidden;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.wrap {
+    background: #ffffff9c;
 }
 .bg-img {
     font-weight: 500;
@@ -25,6 +25,10 @@ body {
 .header {
     padding-top: 40px; 
 }
+.headerg {
+    background-color: aliceblue;
+    padding-top: 40px; 
+}
 .navbar-list {
     list-style: none;
     margin: 0;
@@ -32,8 +36,7 @@ body {
     display: flex;
     gap: 40px;
     justify-content: space-evenly;
-    font-size: 28px;
-    
+    font-size: 23px;    
 }
 .navbar-link:hover {
     background-color: rgb(12, 12, 12);
@@ -52,35 +55,40 @@ a {
     text-transform: uppercase;
     font-weight: 300;
     color: black;
-    text-decoration: none;
-  
+    text-decoration: none; 
 }  
 h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-decoration: none;
     text-transform: uppercase;
-    text-align: left;
+    text-align: center;
     color: black;
     padding: 5px 150px;
     margin: auto;
 }
-
 .artone {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
     font-weight: 800;
-    color: rgb(34, 35, 35);
+    color: rgb(69, 70, 70);
     border-bottom: 1px solid #000000;
 }
 .art {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: rgb(178 149 115);
     padding: 15px;
-    
+    font-size: 18px;   
 }
-.wrap {
-    background: #ffffff9c;
+.art1 {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
+.letter p::first-letter {
+    font-family: Arial;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: rgb(62, 60, 60);
+}
 .readmore {
     text-decoration: underline;
 }
@@ -91,25 +99,15 @@ h1 {
 .comments {
     color: rgb(42, 41, 41);
 }
-.art1 {
-    text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.letter p::first-letter {
-    font-family: Arial;
-    font-size: 1.7rem;
-    font-weight: bold;
-    color: rgb(62, 60, 60);
-}
 .list {
-
     list-style-image: url(../img/icons/icon.png) ;
-    font-size: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
     display: flex;
     justify-content: space-around;
     background-color: rgb(236, 228, 228);
     opacity: 0.7;
-    height: 20vh;
+    height: 30vh;
     padding: 5px;
 }
 .cat {
@@ -141,14 +139,6 @@ li.new::after {
   padding: 5px;  
   margin-left: 20px;
 }
-/* .bgallery-img {  */
-    background-color: hsl(273, 5%, 61%);
-    background-image: url(../img/liberta.jpeg);
-    background-size: 54%;    
-    background-repeat: repeat;
-    background-position: top right;
-    /* background-size: 300px; */
-
 .frame {
     height: 500px;
     width: 800px;
@@ -160,20 +150,26 @@ li.new::after {
 }
 .frame:hover {    
     border-color: transparent;
-    }
-
-    .gallery-item {
-        background: rgb(189, 193, 191);  
-        border:3px solid rgb(102, 101, 101);
-        text-decoration: #050504;
-        color: rgb(62, 60, 60);
-        text-align: center;
-        margin-bottom: 15px;
-        width: 500px;
-    }
-    .gallery-item:hover { 
-        border-color: transparent;
-    }
+}
+.gallery-item {
+    background: rgb(189, 193, 191);  
+    border:3px solid rgb(102, 101, 101);
+    text-decoration: #050504;
+    color: rgb(62, 60, 60);
+    text-align: center;
+    margin-bottom: 15px;
+    flex: 50%;
+    margin: 10px;
+    padding: 10px;
+    flex: 40%;
+}
+.gallery-item:hover { 
+    border-color: transparent;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;   
+}
 .frame-center {
     margin: 0 auto;
     display: block;
@@ -183,7 +179,9 @@ li.new::after {
 }
 .navname {
     display: flex;
+    justify-content: center;
     gap: 20px;
+    padding: 30px 20px;
 }
 legend {
     text-align: center;
@@ -201,13 +199,12 @@ fieldset {
 input {
     width: 80%;
     padding: 10px 30px;   
-  } 
+} 
   textarea {
     width: 90%;
     padding: 10px 10px;
     resize: vertical;  
 }
-
 .form-group {
     margin-bottom: 15px;
 }
@@ -232,43 +229,83 @@ button:hover {
   .caplet {
     text-transform: capitalize;
 }
-
 .fs-28 {
-    font-size: 28px;
+    font-size: 23px;
 }
 .socials {
-    display: flex;
-     justify-content: center;
+   display: flex;
+   justify-content: center;
    gap: 20px;
-   font-weight: 300;
+   font-weight: 500;
    margin-bottom: 12px;
 }
 .social-link {
-    font-size: 1.0rem;
+    font-size: 1.1rem;
 }
-
-.footer {
-    /* position: absolute;
-    z-index: 10;
-    right: 0;
-    bottom: 0;
-    left: 0; */
+.footergal {
+    background-color: aliceblue;
 }
-.position-bottom  {
+.footer__copyrights {
+    -webkit-animation: pulsing 2s infinite; 
+    animation: pulsing 2s infinite; 
     position: fixed;
     right: 0;
     bottom: 0;
-    left: 0;
-  }
+    left: 0;  
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+    height: 100px;  
+    text-align: center;
+    font-weight: bold;   
+}
+.position-bottom  {   
+   position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;  
+}
   .footer__copyright {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
     align-items: center;
     flex-grow: 1;
     justify-content: center;
     height: 30px;  
     text-align: center;
+    font-weight: bold;
+  }    
+  @-webkit-keyframes pulsing {
+    0% {
+      -webkit-transform: scale(0.7, 0.7);
+      transform: scale(0.7, 0.7)
+    }
+    50% {
+      -webkit-transform: scale(1.0, 1.0);
+      transform: scale(1.0, 1.0);
+    }
+    100% {
+      -webkit-transform: scale(0.7, 0.7);
+      transform: scale(0.7, 0.7);
+    }
+  } 
+  @keyframes pulsing {
+    0% {
+      -webkit-transform: scale(0.7, 0.7);
+      transform: scale(0.7, 0.7)
+    }
+    50% {
+      -webkit-transform: scale(1.0, 1.0);
+      transform: scale(1.0, 1.0);
+    }
+    100% {
+      -webkit-transform: scale(0.7, 0.7);
+      transform: scale(0.7, 0.7);
+    }
   }
-    
-@media (max-width: 1340px) {
-
-}
+  
+  
+  
+  

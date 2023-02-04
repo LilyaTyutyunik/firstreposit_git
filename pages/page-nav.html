@@ -1,33 +1,42 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Навігація</title>
+    <title>Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
   </head>
   <body class="bg-img">
-    <header>
-      <nav>
-        <h1>Навігація</h1>
-        <ul>
-          <li><a class="hpage" href="../index.html">Головна сторінка</a></li>
-          <li><a class="articles" href="articles.html">Статті</a></li>
-          <li><a class="catalog" href="catalog.html">Каталог</a></li>
-          <li><a class="contacts" href="contacts.html">Контакти</a></li>
-          <li><a class="gallery" href="gallery.html">Галерея</a></li>
-          <li><a class="page-nav" href="page-nav.html">Навігація</a></li>
-          <li><a class="registration" href="registration.html">Реєстрація</a></li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <ol class="navbar-list">
+            <li class="navbar-item">
+              <a class="navbar-link" href="../index.html">Головна сторінка</a></li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="articles.html">Статті</a></li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="catalog.html">Каталог</a></li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="contacts.html">Контакти</a></li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="gallery.html">Галерея</a></li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="page-nav.html">Навігація</a></li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="registration.html">Реєстрація</a></li>
+          </ol>
+        </nav>
+      </div>
     </header>
     <main>
       <div class="container wrap">
-      <div class="navname"></div>
-      <div id="top">
-        <a class="navname" href="#p1">Розділ1</a>
-        <a class="navname" href="#p2">Розділ2</a>
+      <h1>Навігація</h1>
+      <div class="navname" id="top">
+        <a href="#p1">Розділ1</a>
+        <a href="#p2">Розділ2</a>
         <a href="#p3">Розділ3</a>
         <a href="#p4">Розділ4</a>
         <a href="#p5">Розділ5</a>
@@ -762,8 +771,15 @@
       </div>
     </div> 
     </main>
-    <div>
-      <footer>&copy; Tyutyunik Liliya</footer>
-    </div>
+    <footer class="footer">
+      <div class="footer__copyright">&copy; Lilya Tyutyunik</div>
+      <div class="socials">
+        <a class="social-link" href=""><i class="fa-brands fa-instagram"></i></a>
+        <a class="social-link" href=""><i class="fa-brands fa-facebook"></i></a>
+        <a class="social-link" href=""><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <div class="copyright"></div>
+    </footer>
   </body>
 </html>
+
